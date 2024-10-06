@@ -75,6 +75,12 @@
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-observation</artifactId>
         </dependency>
+        <!-- 一个 Feign HTTP 客户端的 Micrometer 模块，用于收集客户端请求的度量数据 -->
+        <!-- https://mvnrepository.com/artifact/io.github.openfeign/feign-micrometer -->
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-micrometer</artifactId>
+        </dependency>
         <!-- Micrometer 模块，用于与分布式跟踪工具 Brave 集成，以收集应用程序的分布式跟踪数据 -->
         <!-- https://mvnrepository.com/artifact/io.micrometer/micrometer-tracing-bridge-brave -->
         <dependency>
@@ -86,17 +92,6 @@
         <dependency>
             <groupId>io.zipkin.reporter2</groupId>
             <artifactId>zipkin-reporter-brave</artifactId>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/io.zipkin.reporter2/zipkin-sender-urlconnection -->
-        <dependency>
-            <groupId>io.zipkin.reporter2</groupId>
-            <artifactId>zipkin-sender-urlconnection</artifactId>
-        </dependency>
-        <!-- 一个 Feign HTTP 客户端的 Micrometer 模块，用于收集客户端请求的度量数据 -->
-        <!-- https://mvnrepository.com/artifact/io.github.openfeign/feign-micrometer -->
-        <dependency>
-            <groupId>io.github.openfeign</groupId>
-            <artifactId>feign-micrometer</artifactId>
         </dependency>
 
         <dependency>
